@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
                 transition={{ duration: 0.5 }}
                 className="bg-black/30 rounded-lg p-6 h-full flex flex-col justify-center"
               >
-                <p className="text-lg italic text-gray-300 mb-4">"{testimonials[currentTestimonial].quote}"</p>
+                <p className="text-lg italic text-gray-300 mb-4">&quot;{testimonials[currentTestimonial].quote}&quot;</p>
                 <div className="flex items-center">
                   <Image
                     src={testimonials[currentTestimonial].avatar || "/placeholder.svg"}
