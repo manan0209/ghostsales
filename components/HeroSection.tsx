@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const dynamicTexts = [
   "Your Sales Process",
@@ -10,30 +10,30 @@ const dynamicTexts = [
   "Customer Engagement",
   "Sales Automation",
   "Revenue Growth",
-]
+];
 
 export default function HeroSection() {
-  const [dynamicText, setDynamicText] = useState("")
-  const [textIndex, setTextIndex] = useState(0)
-  const [charIndex, setCharIndex] = useState(0)
+  const [dynamicText, setDynamicText] = useState("");
+  const [textIndex, setTextIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
       if (charIndex < dynamicTexts[textIndex].length) {
-        setDynamicText((prev) => prev + dynamicTexts[textIndex][charIndex])
-        setCharIndex((prev) => prev + 1)
+        setDynamicText((prev) => prev + dynamicTexts[textIndex][charIndex]);
+        setCharIndex((prev) => prev + 1);
       } else {
-        clearInterval(typingInterval)
+        clearInterval(typingInterval);
         setTimeout(() => {
-          setDynamicText("")
-          setCharIndex(0)
-          setTextIndex((prev) => (prev + 1) % dynamicTexts.length)
-        }, 2000)
+          setDynamicText("");
+          setCharIndex(0);
+          setTextIndex((prev) => (prev + 1) % dynamicTexts.length);
+        }, 2000);
       }
-    }, 100)
+    }, 100);
 
-    return () => clearInterval(typingInterval)
-  }, [charIndex, textIndex])
+    return () => clearInterval(typingInterval);
+  }, [charIndex, textIndex]);
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -59,7 +59,9 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          GhostSales revolutionizes your sales strategy with cutting-edge AI, automating lead generation, personalizing campaigns, and optimizing customer retention for unprecedented growth.
+          GhostSales revolutionizes your sales strategy with cutting-edge AI,
+          automating lead generation, personalizing campaigns, and optimizing
+          customer retention for unprecedented growth.
         </motion.p>
         <motion.div
           className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
@@ -73,11 +75,14 @@ export default function HeroSection() {
           <Button
             variant="outline"
             className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-all duration-300 text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-8 rounded-md"
+            onClick={() =>
+              (window.location.href = "https://appghostsales.vercel.app/")
+            }
           >
             Watch Demo
           </Button>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
