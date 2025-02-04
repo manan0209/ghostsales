@@ -69,8 +69,11 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-8 rounded-md">
-            Start Your Free Trial
+          <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-8 rounded-md"
+            onClick={() =>
+              (window.location.href = "/#pricing")
+            }>
+            Put Sales on Autopilot
           </Button>
           <Button
             variant="outline"

@@ -24,20 +24,23 @@ export default function Header() {
           GhostSales
         </Link>
         <nav className="hidden md:flex space-x-6">
-          <Link href="#features" className="text-gray-300 hover:text-white transition-colors">
+          <Link href="/#features" className="text-gray-300 hover:text-white transition-colors">
             Features
           </Link>
-          <Link href="#pricing" className="text-gray-300 hover:text-white transition-colors">
+          <Link href="/#pricing" className="text-gray-300 hover:text-white transition-colors">
             Pricing
           </Link>
-          <Link href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
+          <Link href="/#testimonials" className="text-gray-300 hover:text-white transition-colors">
             Testimonials
           </Link>
-          <Link href="#about" className="text-gray-300 hover:text-white transition-colors">
+          <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
             About Us
           </Link>
         </nav>
-        <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
+        <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+        onClick={() =>
+          (window.location.href = "/#pricing")
+        }>
           Get Started
         </Button>
       </div>

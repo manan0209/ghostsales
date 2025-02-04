@@ -7,6 +7,7 @@ import HeroSection from "@/components/HeroSection"
 import FeaturesSection from "@/components/FeaturesSection"
 import TestimonialsSection from "@/components/TestimonialsSection"
 import PricingSection from "@/components/PricingSection"
+import DemoScheduler from "@/components/DemoScheduler"
 import CTASection from "@/components/CTASection"
 import Footer from "@/components/Footer"
 
@@ -51,6 +52,7 @@ export default function Home() {
       <FeaturesSection />
       <TestimonialsSection />
       <PricingSection />
+      <DemoScheduler />
       <CTASection />
       <Footer />
     </motion.main>

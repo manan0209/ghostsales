@@ -1,29 +1,33 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 import { motion } from "framer-motion"
 
 const pricingTiers = [
   {
-    name: "Basic",
-    price: "$49",
+    name: "Starter",
+    price: "$59",
     period: "/month",
     features: [
-      "AI-driven lead generation",
+      "AI-driven lead generation (up to 500 leads/month)",
       "Basic campaign automation",
       "Standard analytics dashboard",
-      "Up to 5 team members",
+      "Up to 3 team members",
+      "Email support",
     ],
   },
   {
-    name: "Pro",
-    price: "$99",
+    name: "Professional",
+    price: "$159",
     period: "/month",
     features: [
-      "Advanced AI lead scoring",
+      "Advanced AI lead scoring (up to 2,000 leads/month)",
       "Personalized campaign automation",
       "Advanced analytics and reporting",
-      "Up to 15 team members",
+      "Up to 10 team members",
       "Priority support",
+      "Integration with CRM systems",
     ],
     recommended: true,
   },
@@ -32,16 +36,21 @@ const pricingTiers = [
     price: "Custom",
     period: "",
     features: [
-      "Full-scale AI automation",
-      "Custom integrations",
+      "Full-scale AI automation (unlimited leads)",
+      "Custom integrations and API access",
       "Dedicated account manager",
       "Unlimited team members",
-      "24/7 premium support",
+      "24/7 premium phone and email support",
+      "On-site training and setup",
     ],
   },
 ]
 
 export default function PricingSection() {
+  const openFormPage = () => {
+    window.open("/form")
+  }
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -115,8 +124,9 @@ export default function PricingSection() {
                     ? "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
                     : "bg-blue-500 hover:bg-blue-600"
                 } transition-all duration-300`}
+                onClick={openFormPage}
               >
-                Sign Up
+                {tier.name === "Enterprise" ? "Contact Sales" : "Get in touch"}
               </Button>
             </motion.div>
           ))}
@@ -125,4 +135,3 @@ export default function PricingSection() {
     </section>
   )
 }
-

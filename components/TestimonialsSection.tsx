@@ -6,29 +6,29 @@ const testimonials = [
   {
     quote:
       "The concept of AI-powered sales automation is exactly what our small business needs. If it can help streamline our follow-ups, I'd definitely invest in this.",
-    name: "Rishita Goel",
-    title: "Data Analyst, IIT Roorkee",
-    avatar: "avatar-2.svg",
-  },
-  {
-    quote:
-      "As a sales manager, I'm excited about the potential of AI insights to help my team focus on building relationships rather than administrative tasks.",
-    name: "Rajesh Patel",
-    title: "Sales Manager, GrowthFirst",
+    name: "Pankaj Bansal",
+    title: "Managing Director, Bansal Enterprises",
     avatar: "avatar-1.svg",
   },
   {
     quote:
+      "As a sales manager, I'm excited about the potential of AI insights to help my team focus on building relationships rather than administrative tasks.",
+    name: "Deepti Goel",
+    title: "Sales Manager, GrowthFirst",
+    avatar: "avatar-2.svg",
+  },
+  {
+    quote:
       "The demo showed promising features for personalized customer outreach. Looking forward to seeing this solution in action.",
-    name: "Aisha Khan",
-    title: "Business Development Head, NextGen Solutions",
+    name: "Rishita Goel",
+    title: "Data Analyst, IIT Roorkee",
     avatar: "avatar-4.svg",
   },
   {
     quote:
       "If this platform can help identify and nurture leads automatically, it would solve a major pain point for our sales team.",
-    name: "Vikram Malhotra",
-    title: "Director, InnovateHub Bangalore",
+    name: "Suraj Shrivastava",
+    title: "Business Owner, Alchemy Enterprises",
     avatar: "avatar-3.svg",
   },
 ];

@@ -4,32 +4,38 @@ import { motion } from "framer-motion"
 const features = [
   {
     title: "AI-Driven Lead Generation",
-    description: "Harness the power of AI to identify and capture high-quality leads across multiple platforms.",
+    description:
+      "Leverage advanced AI algorithms to identify and capture high-quality leads across multiple platforms, increasing your sales pipeline efficiency.",
     icon: Lightbulb,
   },
   {
     title: "Intelligent Campaign Automation",
-    description: "Create and execute personalized marketing strategies tailored to each lead's unique profile.",
+    description:
+      "Create and execute personalized marketing strategies tailored to each lead's unique profile, maximizing engagement and conversion rates.",
     icon: Megaphone,
   },
   {
     title: "Advanced Analytics Dashboard",
-    description: "Gain actionable insights with real-time metrics and detailed performance analytics.",
+    description:
+      "Gain actionable insights with real-time metrics and detailed performance analytics, enabling data-driven decision-making for your sales strategy.",
     icon: BarChart3,
   },
   {
     title: "Seamless Team Collaboration",
-    description: "Enhance team productivity with role-based access, task management, and real-time updates.",
+    description:
+      "Enhance team productivity with role-based access, task management, and real-time updates, ensuring your sales team operates at peak efficiency.",
     icon: Users,
   },
   {
     title: "Predictive Sales Forecasting",
-    description: "Leverage AI to predict sales trends and optimize your strategy for maximum revenue.",
+    description:
+      "Utilize AI-powered predictive analytics to forecast sales trends and optimize your strategy for maximum revenue growth.",
     icon: Target,
   },
   {
     title: "Automated Follow-ups",
-    description: "Never miss an opportunity with intelligent, timely follow-ups tailored to each prospect.",
+    description:
+      "Never miss an opportunity with intelligent, timely follow-ups tailored to each prospect, increasing your chances of closing deals.",
     icon: Zap,
   },
 ]

@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -11,7 +12,7 @@ export default function CTASection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Ready to supercharge your sales?
+          Join GhostSales
         </motion.h2>
         <motion.p
           className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
@@ -19,7 +20,10 @@ export default function CTASection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Get started with GhostSales today and experience the power of AI-driven sales automation.
+          We are the future of sales solutions. We are always looking for
+          passionate individuals who envision to build something that has never
+          been built before. If you are one of them, we would love to have you
+          on board.
         </motion.p>
         <motion.div
           className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4"
@@ -27,18 +31,28 @@ export default function CTASection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <Button className="bg-white text-black hover:bg-gray-200 transition-all duration-300 text-lg py-6 px-8 rounded-md">
-            Start Free Trial Now
-          </Button>
-          <Button
-            variant="outline"
-            className="text-white hover:text-gray-300 transition-colors border-2 border-white hover:bg-white hover:text-black rounded-md"
+          <a href="mailto:manangoel0209@gmail.com">
+            <Button
+              variant="outline"
+              className="text-white transition-colors border-2 border-white hover:bg-white hover:text-black rounded-md"
+            >
+              Connect with the Founder
+            </Button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/curiousmanan"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Learn More
-          </Button>
+            <Button
+              variant="outline"
+              className="text-white transition-colors border-2 border-white hover:bg-white hover:text-black rounded-md"
+            >
+              Connect on LinkedIn
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-
