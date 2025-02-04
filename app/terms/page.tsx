@@ -38,7 +38,7 @@ export default function TermsOfServicePage() {
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4">Privacy and Copyright Protection</h2>
           <p>
-            GhostSales's privacy policies explain how we treat your personal data and protect your privacy when you use
+            GhostSales&apos;s privacy policies explain how we treat your personal data and protect your privacy when you use
             our Services. By using our Services, you agree that GhostSales can use such data in accordance with our
             privacy policies.
           </p>
