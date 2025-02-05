@@ -1,29 +1,9 @@
 "use client"
 
-import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
 export default function DemoScheduler() {
-  useEffect(() => {
-    const script = document.createElement("script")
-    script.src = "https://assets.calendly.com/assets/external/widget.js"
-    script.async = true
-    document.body.appendChild(script)
-
-    script.onload = () => {
-      console.log("Calendly script loaded")
-    }
-
-    script.onerror = () => {
-      console.error("Failed to load Calendly script")
-    }
-
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
-
   const openCalendly = () => {
     window.open("https://calendly.com/curiousmanan/ghostsales", "_blank")
   }
